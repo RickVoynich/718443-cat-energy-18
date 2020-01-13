@@ -1,39 +1,29 @@
 .show-more__title {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: @font-family--oswald;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 10px;
-  margin-top: 68px;
-  text-transform: uppercase;
+  font-weight: 400;
+  color: @color-black;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .show-more__text {
-  font-family: "Arial", sans-serif;
+  font-family: @font-family--arial;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
+  color: @color-gray;
   text-align: center;
-  color: @txt-color-darkgray;
 }
 
 .show-more__button {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: @font-family--oswald;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  color: @color-gray;
+  background-color: @color-lightgray;
+  text-align: center;
   text-transform: uppercase;
-  width: 280px;
-  padding: 11px 0;
-  margin: 24px 20px;
-  border: none;
-  background-color: @bg-color-lightgray;
-  color: @txt-color-darkgray;
-
-  &:focus,
-  &:hover {
-    background-color: #ebebeb;
-  }
-
-  &:active {
-    color: rgba(68, 68, 68, 0.3);
-  }
 }

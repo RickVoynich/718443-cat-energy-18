@@ -1,33 +1,37 @@
 .product__title {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: @font-family--oswald;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  color: @color-black;
+  text-align: left;
   text-transform: uppercase;
-  color: @txt-color-main;
+}
 
-  &--font {
-    line-height: 18px;
-    color: #222222;
-  }
+.product__title--font {
+  line-height: 16px;
 }
 
 .product__table {
-  font-family: "Arial", sans-serif;
+  font-family: @font-family--arial;
   font-size: 12px;
   line-height: 16px;
-  color: @txt-color-darkgray;
-  margin: 0;
+  font-weight: 400;
+  color: @color-gray;
+  text-align: left;
 }
 
-.product__price {
-  text-transform: uppercase;
+.product__table--font {
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .product__button {
-  padding: 11px 0;
-  margin: 24px 20px;
-
-  &--margin {
-    margin: 24px 0;
-  }
+  font-family: @font-family--oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @color-white;
+  text-align: left;
+  text-transform: uppercase;
 }
