@@ -1,11 +1,24 @@
+.food-program {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-program__wrap {
+  min-height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: @color-lightgreen;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
 .food-program__title {
   font-family: @font-family--oswald;
   font-size: 36px;
   font-weight: 400;
   color: @color-white;
-  background-color: @blue;
   line-height: 36px;
   text-align: center;
+  padding-top: 23px;
 }
 
 .food-program__slogan {
@@ -13,7 +26,6 @@
   font-size: 14px;
   font-weight: 400;
   color: @color-white;
-  background-color: @blue;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -24,20 +36,10 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: @color-white;
-  background-color: @color-green;
-  text-align: center;
-  text-transform: uppercase;
+  min-width: 280px;
+  padding: 12px;
+  margin-top: 165px;
 
-  // &:hover,
-  // &:focus {
-  //   background-color: @color-lightgreen;
-  // }
-
-  // &:active {
-  //   background-color: @color-lightgreen;
-  //   color: rgba(255, 255, 255, 0.3);
-  // }
 }
 
 @media (min-width: @tablet-width) {
