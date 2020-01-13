@@ -3,7 +3,7 @@
   font-size: 36px;
   font-weight: 400;
   color: @color-white;
-  background-color: @color-green;
+  background-color: @blue;
   line-height: 36px;
   text-align: center;
 }
@@ -13,7 +13,7 @@
   font-size: 14px;
   font-weight: 400;
   color: @color-white;
-  background-color: @color-green;
+  background-color: @blue;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -22,10 +22,10 @@
 .food-programm__link {
   font-family: @font-family--oswald;
   font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
   color: @color-white;
   background-color: @color-green;
-  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
 
@@ -38,4 +38,25 @@
   //   background-color: @color-lightgreen;
   //   color: rgba(255, 255, 255, 0.3);
   // }
+}
+
+@media (min-width: @tablet-width) {
+  .food-programm__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @color-black;
+    text-align: left;
+  }
+
+  .food-programm__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: @color-black;
+    text-align: left;
+  }
+
+  .food-programm__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
