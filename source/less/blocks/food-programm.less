@@ -1,39 +1,41 @@
-.food-programm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 480px;
-  margin-bottom: 22px;
-  background-color: @bg-color-main;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+.food-programm__title {
+  font-family: @font-family--oswald;
+  font-size: 36px;
+  font-weight: 400;
+  color: @color-white;
+  background-color: @color-green;
+  line-height: 36px;
   text-align: center;
 }
 
-.food-programm__wrap {
-  min-height: 305px;
-  color: @txt-color-white;
-  background-color: @bg-color-green;
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 320px 305px;
-}
-
-.food-programm__title {
-  font-size: 36px;
-  line-height: 36px;
-  margin: 0;
-  padding: 25px 0;
-}
-
 .food-programm__slogan {
+  font-family: @font-family--oswald;
   font-size: 14px;
-  text-transform: uppercase;
+  font-weight: 400;
+  color: @color-white;
+  background-color: @color-green;
   line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .food-programm__link {
-  display: block;
-  padding: 11px 0;
-  margin: 135px auto 22px auto;
+  font-family: @font-family--oswald;
+  font-size: 14px;
+  font-weight: 400;
+  color: @color-white;
+  background-color: @color-green;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: @color-lightgreen;
+  }
+
+  &:active {
+    background-color: @color-lightgreen;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -4,12 +4,12 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: @font-family--oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: @txt-color-main;
-  background-color: @bg-color-main;
+  color: @color-black;
+  background-color: @color-white;
 }
 
 @media (min-width: @desktop-width) {
@@ -48,4 +48,21 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  min-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1220px;
+    padding: 0 40px;
+  }
 }
