@@ -4,9 +4,7 @@
   flex-wrap: wrap;
   position: relative;
   text-decoration: none;
-  width: 320px;
-
-  }
+}
 
 .product__image {
   width: 140px;
@@ -34,7 +32,7 @@
   width: 280px;
   margin-top: 24px;
   margin-bottom: 11px;
-  }
+}
 
 .product__table {
   font-family: @font-family--arial;
@@ -104,7 +102,6 @@
   .product__parameter,
   .product__value,
   .product__price {
-    border-bottom: 1px solid @color-border;
     font-size: 16px;
     height: 20px;
     padding-bottom: 5px;
@@ -113,6 +110,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .product {
+    width: 322px;
+  }
+
   .product__title {
     font-size: 20px;
   }

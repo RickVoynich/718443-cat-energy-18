@@ -4,7 +4,6 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
 }
 
 .catalog__item {
@@ -16,7 +15,6 @@
   margin: 0;
   padding: 11px 0;
   min-height: 206px;
-  border-top: 1px solid @color-border;
 }
 
 .catalog__title {
@@ -36,5 +34,9 @@
 @media (min-width: @tablet-width) {
   .catalog__title {
     font-size: 60px;
+  }
+
+  .catalog__item {
+    border: 1px solid @color-border;
   }
 }
