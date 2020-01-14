@@ -1,15 +1,17 @@
 .show-more {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  min-height: 206px;
 }
 
 .show-more::before {
   content: "";
+  background-image: url("../img/icon-plus-mobile.svg");
   width: 31px;
   height: 31px;
   position: relative;
-  background-image: url("../img/icon-plus-mobile.svg");
+  margin: auto;
   margin-top: 27px;
 }
 
@@ -21,7 +23,6 @@
   color: @color-black;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 80px;
   margin-bottom: 0;
 }
 
@@ -48,7 +49,7 @@
   background-color: @color-lightgray;
   text-align: center;
   text-transform: uppercase;
-  margin: auto;
+  margin: 0;
   text-decoration: none;
   border: none;
 }
@@ -89,7 +90,7 @@
     width: 280px;
     padding-top: 13px;
     padding-bottom: 0;
-    background-color: @color-back--text;
+    background-color: @color-lightgray;
     font-size: 16px;
     line-height: 20px;
     margin-top: 80px;

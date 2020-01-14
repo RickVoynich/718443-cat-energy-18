@@ -13,6 +13,16 @@
   list-style: none;
 }
 
+.add-catalog__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 7px;
+  border-top: 1px solid @color-border;
+  width: 280px;
+}
+
 .add-catalog__promo-text {
   font-family: @font-family--arial;
   font-size: 16px;
@@ -24,8 +34,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .add-catalog {
+    width: 710px;
+  }
+
   .add-catalog__title {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .add-catalog__list {
+    padding-left: 37px;
+    padding-top: 47px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .add-catalog {
+    margin: 0;
+  }
+
+  .add-catalog__list {
+    width: 1450px;
+    padding-left: 0;
   }
 }
