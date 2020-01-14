@@ -1,7 +1,23 @@
 .catalog__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border-top: 1px solid @color-border;
+  padding-bottom: 10px;
+  padding-top: 11px;
+  width: 280px;
+  min-height: 206px;
 }
 
 .catalog__title {
@@ -11,6 +27,11 @@
   font-weight: 400;
   color: @color-black;
   text-align: left;
+}
+
+.catalog__wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: @tablet-width) {
