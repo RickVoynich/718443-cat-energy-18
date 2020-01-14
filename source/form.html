@@ -43,7 +43,7 @@
       <h2 class="program__title">Подбор программы</h2>
       <p class="program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="program__form fields" method="get">
-        <fieldset class="fields__cat-info">
+        <fieldset class="program__fields fields__cat-info">
           <label class="fields__label">
             Имя:*<input type="text" class="fields__text" name="name" placeholder="БАРСИК" required>
           </label>
@@ -54,7 +54,7 @@
             Возраст (лет):<input type="text" class="fields__text" name="age" placeholder="7">
           </label>
         </fieldset>
-        <fieldset class="fields__program-type">
+        <fieldset class="program__fields fields__program-type">
           <ul class="fields__list">
             <li>
               <label class="fields__label">
@@ -74,7 +74,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="fields__contacts">
+        <fieldset class="program__fields fields__contacts">
           <legend class="fields__title">Контактные данные (владельца кота)</legend>
           <label class="fields__label">
             E-mail:*<input type="email" class="fields__text fields__text--mail" name="mail"
@@ -85,12 +85,12 @@
               placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
-        <fieldset class="fields__comments">
+        <fieldset class="program__fields fields__comments">
           <legend class="fields__title">Комментарий</legend>
           <textarea class="fields__text" name="comments" cols="37" rows="8"
             placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
         </fieldset>
-        <fieldset class="fields__add">
+        <fieldset class="program__fields fields__add">
           <legend class="fields__title">Дополнительно</legend>
           <ul class="fields__list">
             <li>
