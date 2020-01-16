@@ -1,4 +1,8 @@
 .page-footer {
+  background-color: @color-lightgray;
+}
+
+.page-footer__wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,4 +51,16 @@
   font-family: @font-family--arial;
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__social {
+    border: none;
+  }
 }
