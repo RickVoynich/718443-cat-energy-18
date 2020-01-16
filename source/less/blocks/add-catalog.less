@@ -8,13 +8,16 @@
 }
 
 .add-catalog__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .add-catalog__item {
-  list-style: none;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -62,13 +65,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .add-catalog {
-    width: 710px;
-  }
-
   .add-catalog__title {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .add-catalog__item {
+    width: 708px;
+    flex-direction: row;
   }
 
   .add-catalog__list {
