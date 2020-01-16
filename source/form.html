@@ -44,15 +44,18 @@
       <p class="program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="program__form fields" method="get">
         <fieldset class="program__fields fields__cat-info">
-          <label class="fields__label">
-            Имя:*<input type="text" class="fields__text" name="name" placeholder="БАРСИК" required>
-          </label>
-          <label class="fields__label">
-            Вес (кг):*<input type="text" class="fields__text" name="weight" placeholder="7" required>
-          </label>
-          <label class="fields__label">
-            Возраст (лет):<input type="text" class="fields__text" name="age" placeholder="7">
-          </label>
+          <div class="fields__wrap">
+            <label class="fields__label" for="cat-name">Имя:*</label>
+            <input type="text" class="fields__text" name="name" placeholder="БАРСИК" id="cat-name" required>
+          </div>
+          <div class="fields__wrap">
+            <label class="fields__label" for="cat-weight">Вес (кг):*</label>
+            <input type="text" class="fields__text" name="weight" placeholder="7" id="cat-weight" required>
+          </div>
+          <div class="fields__wrap">
+            <label class="fields__label" for="cat-age">Возраст (лет):</label>
+            <input type="text" class="fields__text" name="age" placeholder="7" id="cat-age">
+          </div>
         </fieldset>
         <fieldset class="program__fields fields__program-type">
           <ul class="fields__list">
