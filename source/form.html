@@ -77,17 +77,19 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program__fields fields__contacts">
+        <fieldset class="program__fields">
           <legend class="fields__title">Контактные данные (владельца кота)</legend>
-          <div class="fields__wrap">
-            <label class="fields__label" for="cat-mail">E&#8209;mail:*</label>
-            <input type="email" class="fields__text fields__text--mail" name="mail" placeholder="KUKLACHEV@GMAIL.COM"
-              id="cat-mail" required>
-          </div>
-          <div class="fields__wrap">
-            <label class="fields__label" for="cat-phone">Телефон:*</label>
-            <input type="tel" class="fields__text fields__text--phone" name="phone" placeholder="8 (960) 900-60-90"
-              id="cat-phone" required>
+          <div class="fields__contacts">
+            <div class="fields__wrap fields__wrap--contacts">
+              <label class="fields__label" for="cat-mail">E&#8209;mail:*</label>
+              <input type="email" class="fields__text fields__text--mail" name="mail" placeholder="KUKLACHEV@GMAIL.COM"
+                id="cat-mail" required>
+            </div>
+            <div class="fields__wrap fields__wrap--contacts">
+              <label class="fields__label" for="cat-phone">Телефон:*</label>
+              <input type="tel" class="fields__text fields__text--phone" name="phone" placeholder="8 (960) 900-60-90"
+                id="cat-phone" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="program__fields fields__comments">
