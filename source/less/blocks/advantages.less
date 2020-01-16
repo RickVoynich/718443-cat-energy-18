@@ -1,3 +1,8 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__title {
   font-family: @font-family--oswald;
   font-size: 36px;
@@ -14,4 +19,15 @@
   font-weight: 400;
   color: @color-gray;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__title {
+    font-size: 60px;
+  }
+
+  .advantages__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

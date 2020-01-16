@@ -1,3 +1,13 @@
+.demo {
+  min-height: 705px;
+  background-color: @color-lightgray;
+}
+
+.demo__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .demo__title {
   font-family: @font-family--oswald;
   font-size: 36px;
@@ -27,8 +37,8 @@
 
 .demo__stats-subtitle {
   font-family: @font-family--arial;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 400;
   color: @color-gray;
   text-align: center;
@@ -52,4 +62,33 @@
   color: @color-black;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .demo__title {
+    font-size: 60px;
+  }
+
+  .demo__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .demo__stats-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .demo__stats-subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .demo__cost {
+    font-size: 20px;
+  }
+
+  .demo__progress-btn {
+    font-size: 20px;
+  }
 }

@@ -8,7 +8,133 @@
 }
 
 .add-catalog__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-catalog__item {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border-top: 1px solid @color-border;
+  width: 280px;
+}
+
+.add-catalog__item:last-child {
+  border-bottom: 1px solid @color-border;
+}
+
+.add-catalog__promo {
+  width: 280px;
+  height: 289px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @color-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 55px;
+  z-index: 1;
+}
+
+.add-catalog__promo::before {
+  content: "";
+  position: relative;
+  width: 56px;
+  height: 61px;
+  z-index: 4;
+  margin-top: 65px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+}
+
+.add-catalog__promo-text {
+  font-family: @font-family--arial;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @color-white;
+  text-align: center;
+  width: 159px;
+  margin-top: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-catalog__item {
+    width: 708px;
+    flex-direction: row;
+  }
+
+  .add-catalog__list {
+    padding-left: 37px;
+    padding-top: 47px;
+  }
+
+  .add-catalog__promo {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-top: 75px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .add-catalog__promo::before {
+    bottom: 35px;
+    right: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-catalog {
+    margin: 0;
+  }
+
+  .add-catalog__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .add-catalog__list {
+    padding-left: 0;
+  }
+
+  .add-catalog__item {
+    width: 895px;
+    align-items: center;
+  }
+
+  .add-catalog__promo {
+    position: relative;
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    margin: 0;
+    right: 0;
+    top: 50px;
+    flex-direction: column;
+  }
+
+  .add-catalog__promo::before {
+    top: 0;
+    right: 0;
+  }
 }
