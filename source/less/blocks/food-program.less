@@ -3,14 +3,6 @@
   flex-direction: column;
 }
 
-.food-program__wrap {
-  min-height: 305px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: @color-lightgreen;
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-
 .food-program__title {
   font-family: @font-family--oswald;
   font-size: 36px;
@@ -39,6 +31,16 @@
   min-width: 280px;
   padding: 12px 0;
   margin-top: 165px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .food-program__wrap {
+    min-height: 305px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: @color-lightgreen;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
 @media (min-width: @tablet-width) {

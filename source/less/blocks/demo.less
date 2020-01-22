@@ -26,6 +26,13 @@
   text-align: left;
 }
 
+.demo__stats {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
 .demo__stats-value {
   font-family: @font-family--oswald;
   font-size: 24px;
@@ -74,14 +81,24 @@
     line-height: 24px;
   }
 
+  .demo__stats {
+    width: 708px;
+  }
+
+  .demo__stats-item {
+    width: 160px;
+  }
+
   .demo__stats-value {
     font-size: 30px;
     line-height: 37px;
+    border: 1px solid blue;
   }
 
   .demo__stats-subtitle {
     font-size: 14px;
     line-height: 14px;
+    background-color: white;
   }
 
   .demo__cost {
@@ -90,5 +107,15 @@
 
   .demo__progress-btn {
     font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .demo__text {
+    width: 570px;
+  }
+
+  .demo__stats {
+    width: 570px;
   }
 }
