@@ -1,11 +1,5 @@
 .demo {
-  min-height: 705px;
   background-color: @color-lightgray;
-}
-
-.demo__wrap {
-  display: flex;
-  flex-direction: column;
 }
 
 .demo__title {
@@ -15,6 +9,7 @@
   font-weight: 400;
   color: @color-black;
   text-align: left;
+  align-self: flex-start;
 }
 
 .demo__text {
@@ -24,6 +19,13 @@
   font-weight: 400;
   color: @color-gray;
   text-align: left;
+}
+
+.demo__stats {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 280px;
 }
 
 .demo__stats-value {
@@ -65,6 +67,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .demo {
+    background-image: linear-gradient(to bottom, white, white 70%, @color-lightgray 30%, @color-lightgray);
+  }
+
   .demo__title {
     font-size: 60px;
   }
@@ -74,14 +80,24 @@
     line-height: 24px;
   }
 
+  .demo__stats {
+    width: 708px;
+  }
+
+  .demo__stats-item {
+    width: 160px;
+  }
+
   .demo__stats-value {
     font-size: 30px;
     line-height: 37px;
+    border: 1px solid blue;
   }
 
   .demo__stats-subtitle {
     font-size: 14px;
     line-height: 14px;
+    background-color: white;
   }
 
   .demo__cost {
@@ -90,5 +106,19 @@
 
   .demo__progress-btn {
     font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .demo {
+    background-image: linear-gradient(to bottom, white, white 50%, @color-lightgray 50%, @color-lightgray);
+  }
+
+  .demo__text {
+    width: 570px;
+  }
+
+  .demo__stats {
+    width: 570px;
   }
 }

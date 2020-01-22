@@ -1,23 +1,62 @@
+// .burger {
+//   width: 25px;
+//   height: 20px;
+//   cursor: pointer;
+//   position: relative;
+//   display: inline-block;
+//   border: none;
+//   border-top: 2px solid #222222;
+//   border-bottom: 2px solid #222222;
+//   text-shadow: 0 1px 0 #222222;
+//   top: 10px;
+// }
+
 .burger {
-  width: 25px;
+  width: 20px;
   height: 20px;
   cursor: pointer;
   position: relative;
   display: inline-block;
   border: none;
-  border-top: 2px solid #222222;
-  border-bottom: 2px solid #222222;
-  text-shadow: 0 1px 0 #222222;
   top: 10px;
+  background-color: transparent;
 }
-
+/*
 .burger::before {
   content: "";
   position: absolute;
   top: 7px;
   left: 0;
   width: 100%;
-  border-top: 2px solid #222222;
+  border-top: 2px solid @color-font--black;
+}
+.burger {
+   width: 25px;
+  border-top: 2px solid @color-font--black;
+  border-bottom: 2px solid @color-font--black;
+  text-shadow: 0 1px 0 @color-font--black;
+}
+*/
+.burger::after,
+.burger::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 27px;
+  background-color: #222222;
+  left: -4px;
+}
+
+.burger::after {
+  transform: rotate(45deg);
+}
+
+.burger::before {
+  transform: rotate(-45deg);
+}
+
+.burger--no-js {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {

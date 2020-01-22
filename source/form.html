@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -23,7 +24,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <nav class="header__menu">
+    <nav class="header__menu header__menu--no-js">
       <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -43,10 +44,11 @@
       <h2 class="program__title">Подбор программы</h2>
       <p class="program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="program__form fields" method="get">
+
         <fieldset class="program__fields fields__cat-info">
           <div class="fields__wrap">
             <label class="fields__label" for="cat-name">Имя:*</label>
-            <input type="text" class="fields__text" name="name" placeholder="БАРСИК" id="cat-name" required>
+            <input type="text" class="fields__text" name="name" placeholder="Барсик" id="cat-name" required>
           </div>
           <div class="fields__wrap">
             <label class="fields__label" for="cat-weight">Вес&nbsp;(кг):*</label>
@@ -60,23 +62,20 @@
         <fieldset class="program__fields fields__program-type">
           <ul class="fields__list">
             <li>
-              <label class="fields__label">
-                <input type="radio" class="fields__radio" name="program-type" value="slim" checked>Похудение
-              </label>
+              <input type="radio" class="fields__radio-input" name="program-type" value="slim" id="slim" checked>
+              <label class="fields__radio fields__label" for="slim">Похудение</label>
             </li>
             <li>
-              <label class="fields__label">
-                <input type="radio" class="fields__radio" name="program-type" value="pro"> Набор массы
-              </label>
+              <input type="radio" class="fields__radio-input" name="program-type" value="pro" id="pro">
+              <label class="fields__radio fields__label" for="pro">Набор массы</label>
             </li>
             <li>
-              <label class="fields__label">
-                <input type="radio" class="fields__radio" name="program-type" value="unknown"> Не знаю (нужен ваш
-                совет)
-              </label>
+              <input type="radio" class="fields__radio-input" name="program-type" value="unknown" id="unknown">
+              <label class="fields__radio fields__label" for="unknown">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
+
         <fieldset class="program__fields">
           <legend class="fields__title">Контактные данные (владельца кота)</legend>
           <div class="fields__contacts">
@@ -92,44 +91,40 @@
             </div>
           </div>
         </fieldset>
+
         <fieldset class="program__fields fields__comments">
           <legend class="fields__title">Комментарий</legend>
           <textarea class="fields__text fields__text--textarea" name="comments" rows="5"
-            placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="program__fields fields__add">
+
+        <fieldset class="program__fields">
           <legend class="fields__title">Дополнительно</legend>
           <ul class="fields__list fields__list--add">
             <li class="fields__item">
-              <label class="fields__label">
-                <input type="checkbox" class="fields__check" name="sweetener" checked>
-                Сахарозаменитель
-              </label>
+              <input type="checkbox" class="fields__check-input" name="sweetener" id="sweetener" checked>
+              <label class="fields__check fields__label" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="fields__item">
-              <label class="fields__label">
-                <input type="checkbox" class="fields__check" name="water">
-                Питьевая вода
-              </label>
+              <input type="checkbox" class="fields__check-input" name="water" id="water">
+              <label class="fields__check fields__label" for="water">Питьевая вода</label>
             </li>
             <li class="fields__item">
-              <label class="fields__label">
-                <input type="checkbox" class="fields__check" name="milk">
-                Молоко
-              </label>
+              <input type="checkbox" class="fields__check-input" name="milk" id="milk">
+              <label class="fields__check fields__label" for="milk">Молоко</label>
             </li>
             <li class="fields__item">
-              <label class="fields__label">
-                <input type="checkbox" class="fields__check" name="vitamins">
-                Витамины
-              </label>
+              <input type="checkbox" class="fields__check-input" name="vitamins" id="vitamins">
+              <label class="fields__check fields__label" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
+
         <button type="submit" class="fields__btn button">Отправить заявку</button>
         <span class="fields__footnote">* — Обязательные поля</span>
       </form>
     </section>
+
     <section class="cooperation container">
       <div class="cooperation__wrap">
         <h3 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>

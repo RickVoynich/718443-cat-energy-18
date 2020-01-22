@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   padding-top: 13px;
@@ -19,6 +20,10 @@
 .header__menu {
   display: none;
   padding: 0;
+}
+
+.header__menu--no-js {
+  display: block;
 }
 
 .header__logo {
@@ -68,10 +73,24 @@
   .header {
     padding-top: 44px;
     width: 1220px;
-    position: relative;
-    background: none;
-    z-index: 2;
     justify-content: space-between;
+  }
+
+  .header--index::after {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: -1;
+    width: 50%;
+    min-height: 696px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-color: @color-green;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .header__menu {
