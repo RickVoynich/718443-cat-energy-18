@@ -3,8 +3,8 @@
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .catalog__item {
@@ -14,6 +14,7 @@
   position: relative;
   text-decoration: none;
   padding: 11px 0;
+  width: 280px;
   min-height: 206px;
 }
 
@@ -37,6 +38,8 @@
   }
 
   .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
