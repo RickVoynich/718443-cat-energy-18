@@ -41,14 +41,50 @@
 }
 
 .page-footer__copyright {
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 31px;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .page-footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 21px 19px;
+  margin-right: -5px;
+
+  &:focus path,
+  &:hover path {
+    fill: @color-lightgreen;
+  }
+
+  &:active,
+  &:active path {
+    fill: @color-green;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__academy-title {
   font-family: @font-family--arial;
   font-size: 16px;
   line-height: 16px;
+  text-decoration: none;
+  color: @color-gray;
+  font-weight: 400;
 }
+
+.page-footer__academy-logo path {
+  fill: @color-gray;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-footer__wrap {
@@ -59,5 +95,20 @@
 
   .page-footer__social {
     border: none;
+  }
+
+  .page-footer__copyright {
+    padding-top: 30px;
+  }
+
+  .page-footer__academy-link {
+    margin-right: -5px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__copyright {
+    padding-top: 33px;
   }
 }
