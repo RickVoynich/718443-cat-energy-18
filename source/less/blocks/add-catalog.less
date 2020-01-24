@@ -1,3 +1,21 @@
+.add-catalog {
+  padding-top: 32px;
+  padding-bottom: 36px;
+  align-items: center;
+  position: relative;
+}
+
+.add-catalog::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  background-color: @color-green;
+}
+
 .add-catalog__title {
   font-family: @font-family--oswald;
   font-size: 24px;
@@ -5,6 +23,11 @@
   font-weight: 400;
   color: @color-black;
   text-align: left;
+  margin: 0;
+  margin-bottom: 34px;
+  margin-left: -27px;
+  padding-right: 25px;
+  background-color: white;
 }
 
 .add-catalog__list {
@@ -25,6 +48,8 @@
   position: relative;
   text-decoration: none;
   margin: 0;
+  padding-top: 13px;
+  padding-bottom: 19px;
   border-top: 1px solid @color-border;
   width: 280px;
 }
@@ -45,7 +70,7 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   text-align: center;
-  margin-top: 55px;
+  margin-top: 39px;
   z-index: 1;
 }
 
@@ -67,8 +92,8 @@
   font-weight: 400;
   color: @color-white;
   text-align: center;
-  width: 159px;
-  margin-top: 65px;
+  width: 169px;
+  margin-top: 62px;
 }
 
 @media (min-width: @tablet-width) {
@@ -103,10 +128,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .add-catalog {
-    margin: 0;
-  }
-
   .add-catalog__wrap {
     display: flex;
     justify-content: space-between;
