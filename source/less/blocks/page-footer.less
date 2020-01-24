@@ -1,5 +1,6 @@
 .page-footer {
   background-color: @color-lightgray;
+  width: 100%;
 }
 
 .page-footer__wrap {
@@ -12,6 +13,7 @@
 .page-footer__logo {
   text-align: center;
   font-size: 0;
+  margin-bottom: 14px;
 }
 
 .page-footer__logo-image {
@@ -19,15 +21,16 @@
 }
 
 .page-footer__social {
-  margin: 0 20px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .page-footer__social-link {
-  padding: 21px 19px;
+  padding: 21px 0;
+  width: 56px;
 
   &:focus path,
   &:hover path {
@@ -42,10 +45,11 @@
 
 .page-footer__copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-top: 18px;
-  padding-bottom: 31px;
+  margin-top: 14px;
+  padding-bottom: 22px;
+  width: 100%;
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
@@ -56,9 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 21px 19px;
-  margin-right: -5px;
+  width: 285px;
 
   &:focus path,
   &:hover path {
