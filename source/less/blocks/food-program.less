@@ -1,5 +1,6 @@
 .food-program__wrap {
   width: 320px;
+  position: relative;
 }
 
 .food-program__title {
@@ -23,12 +24,18 @@
   margin: 0;
 }
 
+.food-program__img {
+  position: absolute;
+  bottom: 44px;
+  z-index: -1;
+}
+
 .food-program__link {
   font-family: @font-family--oswald;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  min-width: 280px;
+  width: 280px;
   padding: 12px 0;
   margin-top: 134px;
 }
@@ -40,15 +47,29 @@
     background-color: @color-lightgreen;
     background-repeat: no-repeat;
     background-position: 50%;
+    position: relative;
+    z-index: -2;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .food-program {
+    min-height: 812px;
+    margin-bottom: 20px;
+  }
+
+  .food-program__wrap {
+    width: @tablet-width;
+    padding-left: 118px;
+    padding-top: 20px;
+  }
+
   .food-program__title {
     font-size: 60px;
     line-height: 60px;
     color: @color-black;
     text-align: left;
+    width: 500px;
   }
 
   .food-program__slogan {
@@ -56,10 +77,45 @@
     line-height: 20px;
     color: @color-black;
     text-align: left;
+    padding-top: 15px;
   }
 
   .food-program__link {
+    width: 245px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    padding: 16px 0;
+  }
+
+  .food-program__img {
+    left: 29px;
+    bottom: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .food-program {
+    min-height: 605px;
+  }
+
+  .food-program__wrap {
+    width: @desktop-width;
+  }
+
+  .food-program__title {
+    padding-top: 50px;
+  }
+
+  .food-program__img {
+    left: 490px;
+    top: -260px;
+  }
+
+  .food-program__link {
+    margin-top: 32px;
+    margin-bottom: 20px;
+    padding: 15px 0;
   }
 }
