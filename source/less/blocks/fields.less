@@ -1,8 +1,12 @@
+.fields__cat-info {
+  padding-bottom: 6px;
+}
+
 .fields__wrap {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .fields__title {
@@ -12,6 +16,35 @@
   font-weight: 400;
   color: @color-black;
   text-align: left;
+  max-width: 205px;
+}
+
+.fields__title--line {
+  position: relative;
+  background-color: white;
+  padding-right: 24px;
+}
+
+.fields__title--line::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 3px;
+  position: absolute;
+  top: 15px;
+  background-color: @color-green;
+}
+
+.fields__contacts {
+  margin-top: 27px;
+}
+
+.fields__contact-wrapper {
+  margin-top: 35px;
+}
+
+.fields__comments {
+  margin-top: 11px;
 }
 
 .fields__label {
@@ -26,6 +59,7 @@
 }
 
 .fields__text {
+  position: relative;
   border: 1px solid #cdcdcd;
   font-family: @font-family--oswald;
   font-size: 16px;
@@ -36,7 +70,7 @@
   text-transform: uppercase;
   width: 100%;
   min-height: 43px;
-  padding-left: 15px;
+  padding-left: 12px;
 
   &::placeholder {
     color: @color-gray;
@@ -44,11 +78,22 @@
   }
 }
 
+.fields__text--textarea {
+  margin-top: 35px;
+  min-height: 150px;
+  padding-top: 12px;
+}
+
+.fields__program-type {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
 .fields__list {
-  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 8px;
   padding: 0;
   list-style: none;
-  border: 1px solid #cdcdcd;
 }
 
 .fields__list--add {
@@ -62,7 +107,7 @@
   width: 100%;
   padding-left: 45px;
   padding-top: 6px;
-  padding-bottom: 6px;
+  padding-bottom: 19px;
   cursor: pointer;
 }
 
@@ -96,6 +141,20 @@
 
 .fields__radio-input:checked + .fields__radio::after {
   display: block;
+}
+
+.fields__add {
+  margin-top: 28px;
+}
+
+.fields__title--add {
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.fields__item {
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 
 .fields__check {
@@ -139,6 +198,8 @@
   color: @color-white;
   text-align: center;
   text-transform: uppercase;
+  width: 280px;
+  margin-top: 21px;
 }
 
 .fields__footnote {
@@ -148,6 +209,7 @@
   font-weight: 400;
   color: @color-gray;
   text-align: center;
+  margin-top: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -189,7 +251,7 @@
     width: 570px;
   }
 
-  .fields__contacts {
+  .fields__contact-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

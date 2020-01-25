@@ -40,11 +40,14 @@
   </header>
 
   <main class="page-main">
-    <section class="program container">
-      <h2 class="program__title">Подбор программы</h2>
-      <p class="program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" class="program__form fields" method="get">
+    <section class="title-block container">
+      <h2 class="title-block__title">Подбор программы</h2>
+      <p class="title-block__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </section>
 
+    <section class="program">
+
+      <form action="https://echo.htmlacademy.ru" class="program__form fields container" method="get">
         <fieldset class="program__fields fields__cat-info">
           <div class="fields__wrap">
             <label class="fields__label" for="cat-name">Имя:*</label>
@@ -76,9 +79,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="program__fields">
-          <legend class="fields__title">Контактные данные (владельца кота)</legend>
-          <div class="fields__contacts">
+        <fieldset class="program__fields fields__contacts">
+          <legend class="fields__title fields__title--line">Контактные данные (владельца кота)</legend>
+          <div class="fields__contact-wrapper">
             <div class="fields__wrap fields__wrap--contacts">
               <label class="fields__label" for="cat-mail">E&#8209;mail:*</label>
               <input type="email" class="fields__text fields__text--mail" name="mail" placeholder="KUKLACHEV@GMAIL.COM"
@@ -93,13 +96,13 @@
         </fieldset>
 
         <fieldset class="program__fields fields__comments">
-          <legend class="fields__title">Комментарий</legend>
+          <legend class="fields__title fields__title--line ">Комментарий</legend>
           <textarea class="fields__text fields__text--textarea" name="comments" rows="5"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="program__fields">
-          <legend class="fields__title">Дополнительно</legend>
+        <fieldset class="program__fields fields__add">
+          <legend class="fields__title fields__title--add fields__title--line">Дополнительно</legend>
           <ul class="fields__list fields__list--add">
             <li class="fields__item">
               <input type="checkbox" class="fields__check-input" name="sweetener" id="sweetener" checked>
@@ -131,20 +134,19 @@
         <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <picture class="cooperation__map">
-        <source type="image/webp" media="(min-width: 1300px)"
+        <!-- <source type="image/webp" media="(min-width: 1300px)"
           srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
-        <source class="store__image-item" type="image/webp"
-          srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x"> -->
         <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
         <img class="cooperation__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </picture>
-      <iframe class="cooperation__map-iframe"
+      <!-- <iframe class="cooperation__map-iframe"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d16cfb634a0a0ac076df8dccdc6522f14393cfaef797ef448062c7ff8bf916f&amp;source=constructor"
-        width="100%" height="363" frameborder="0"></iframe>
+        width="100%" height="363" frameborder="0"></iframe> -->
     </section>
   </main>
 
