@@ -108,10 +108,12 @@
           </p>
         </div>
         <div class="demo__progress">
-          <img class="demo__progress-image demo__progress-image--before" src="https://via.placeholder.com/150x150"
-            alt="">
-          <img class="demo__progress-image demo__progress-image--after" src="https://via.placeholder.com/150x150"
-            alt="">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+            <img class="demo__progress-image" src="img/before-mobile@1x.png" width="310" height="232"
+              srcset="img/before-mobile@2x.png 2x" alt="Жирный кот">
+          </picture>
           <button class="demo__progress-btn demo__progress-btn--before">Было</button>
           <button class="demo__progress-btn demo__progress-btn--after">Стало</button>
         </div>
