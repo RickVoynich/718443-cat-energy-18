@@ -1,3 +1,7 @@
+.catalog {
+  width: 320px;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -5,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 320px;
 }
 
 .catalog__item {
@@ -32,6 +37,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog {
+    width: @tablet-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .catalog__title {
     font-size: 60px;
   }
@@ -40,12 +51,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
   }
 
   .catalog__item {
     padding-bottom: 40px;
-    padding-left: 38px;
-    padding-right: 37px;
     margin-bottom: 33px;
     width: 322px;
     align-items: center;
