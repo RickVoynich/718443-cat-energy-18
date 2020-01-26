@@ -1,22 +1,20 @@
 .demo {
   background-color: @color-lightgray;
-  margin-top: 22px;
 }
 
 .demo__wrapper {
   width: 320px;
+  margin: 0 auto;
 }
 
 .demo__title {
-  width: 280px;
-  padding-left: 15px;
   font-family: @font-family--oswald;
   font-size: 36px;
   text-align: left;
   line-height: 60px;
   font-weight: 400;
+  margin-top: 6px;
   margin-bottom: 23px;
-  margin-top: 25px;
 }
 
 .demo__text {
@@ -25,8 +23,7 @@
   line-height: 18px;
   text-align: left;
   color: @color-gray;
-  width: 280px;
-  padding-left: 15px;
+  width: 270px;
 }
 
 .demo__bold {
@@ -91,7 +88,6 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-  padding-left: 16px;
 }
 
 .demo__description {
@@ -115,13 +111,13 @@
 }
 
 .demo__indicator {
-  width: 196px;
+  width: 200px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 31px;
-  margin-left: 58px;
-  margin-bottom: 31px;
+  margin-top: 28px;
+  margin-left: 63px;
+  padding-bottom: 31px;
 }
 
 .demo__indicator::after {
@@ -129,7 +125,6 @@
   position: absolute;
   width: 70px;
   height: 6px;
-  border: 4px solid @color-lightgray;
   border-radius: 16px;
   box-shadow: 0 0 0 1px #cdcdcd;
   background-image: linear-gradient(to left, @color-white, @color-white 50%, @color-green 50%, @color-green);
@@ -150,14 +145,18 @@
   .demo {
     background-image: linear-gradient(to bottom, @color-white, @color-white 58%, @color-lightgray 42%, @color-lightgray);
     width: 100%;
+    padding-bottom: 70px;
+  }
+
+  .demo__wrapper {
+    width: @tablet-width;
   }
 
   .demo__title {
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    margin-top: 50px;
-    padding-left: 5px;
+    margin-top: 29px;
     width: 700px;
   }
 
@@ -165,7 +164,6 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 64px;
-    padding-left: 5px;
     width: 700px;
   }
 
@@ -210,12 +208,31 @@
     padding-left: 0;
   }
 
+  .demo__cost {
+    font-size: 20px;
+    line-height: 30px;
+    width: 195px;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    top: 275px;
+    margin-top: 9px;
+  }
+
+  .demo__img {
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    top: 85px;
+    left: 18px;
+  }
+
   .demo__indicator {
     justify-content: space-between;
-    width: 570px;
-    margin-left: 73px;
-    margin-top: 100px;
-    margin-bottom: 75px;
+    width: 574px;
+    margin-left: 97px;
+    margin-top: 106px;
+    margin-bottom: 5px;
   }
 
   .demo__indicator::after {
@@ -257,14 +274,6 @@
     }
   }
 
-  .demo__img {
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    top: 85px;
-    left: 18px;
-  }
-
   .demo__cat--is {
     width: 52px;
     margin-left: 452px;
@@ -277,21 +286,6 @@
   .demo__live {
     position: relative;
   }
-
-  .demo__cost {
-    font-size: 20px;
-    line-height: 30px;
-    width: 195px;
-    position: absolute;
-    text-align: right;
-    right: 8px;
-    top: 275px;
-    margin-top: 30px;
-  }
-
-  .demo__wrapper {
-    width: 720px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -299,36 +293,46 @@
     background-image: linear-gradient(to top, @color-lightgray, @color-lightgray 75%, @color-white 25%, @color-white);
   }
 
-  .demo__wrapper {
+  .demo__wrap-desktop {
+    width: @desktop-width;
+    display: flex;
     flex-direction: row;
-    width: 1220px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+
+  .demo__wrapper {
+    width: 610px;
+  }
+
+  .demo__title {
+    margin-top: 12px;
+    padding-left: 30px;
   }
 
   .demo__text {
-    width: 435px;
+    width: 465px;
     margin-top: 145px;
-    padding-left: 0;
+    padding-left: 30px;
   }
 
   .demo__features {
     margin-top: 67px;
+    padding-left: 23px;
   }
 
   .demo__cost {
     width: 390px;
     position: static;
     margin-top: 55px;
+    padding-left: 30px;
     text-align: left;
   }
 
   .demo__indicator {
-    margin-left: 80px;
-    margin-top: 10px;
-  }
-
-  .demo__title {
-    margin-top: 31px;
-    padding-left: 0;
+    margin-left: 109px;
+    margin-top: 54px;
+    width: 571px;
   }
 
   .demo__cost-span {
@@ -336,9 +340,9 @@
   }
 
   .demo__img {
-    top: -30px;
+    top: 9px;
     left: auto;
-    right: auto;
+    right: -37px;
   }
 
   .demo__bold {
@@ -350,15 +354,11 @@
     background-color: @color-lightgray;
   }
 
-  .demo__live {
-    width: 570px;
-  }
-
   .demo__small {
     margin-top: 12px;
   }
 
   .demo__description {
-    margin-right: 35px;
+    margin-right: 45px;
   }
 }
