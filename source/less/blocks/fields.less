@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 17px;
+  position: relative;
 }
 
 .fields__title {
@@ -16,18 +17,16 @@
   font-weight: 400;
   color: @color-black;
   text-align: left;
-  max-width: 205px;
-}
-
-.fields__title--line {
   position: relative;
+  display: inline-block;
   background-color: white;
-  padding-right: 24px;
+  padding-right: 20px;
+  max-width: 202px;
 }
 
 .fields__title--line::before {
   content: "";
-  z-index: -1;
+  z-index: -3;
   width: 300px;
   height: 3px;
   position: absolute;
@@ -52,7 +51,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: @color-black;
+  color: #222222;
   text-align: left;
   text-transform: uppercase;
   margin-right: 15px;
@@ -65,12 +64,11 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: @color-black;
+  color: @color-gray;
   text-align: left;
   text-transform: uppercase;
   width: 100%;
-  min-height: 43px;
-  padding-left: 12px;
+  padding: 12px;
 
   &::placeholder {
     color: @color-gray;
@@ -84,20 +82,33 @@
   padding-top: 12px;
 }
 
+.fields__icon-mail {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 17px;
+  height: 13px;
+}
+
+.fields__icon-phone {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  width: 20px;
+  height: 20px;
+}
+
 .fields__program-type {
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border: 1px solid #ededed;
 }
 
 .fields__list {
-  margin-top: 21px;
-  margin-bottom: 8px;
+  margin-top: 20px;
+  margin-bottom: 7px;
   padding: 0;
   list-style: none;
-}
-
-.fields__list--add {
-  border: none;
 }
 
 .fields__radio {
@@ -152,6 +163,10 @@
   margin-bottom: 12px;
 }
 
+.fields__list--add {
+  border: none;
+}
+
 .fields__item {
   margin-top: 10px;
   margin-bottom: 13px;
@@ -190,6 +205,12 @@
   background-size: 70%;
 }
 
+.fields__bottom-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .fields__btn {
   font-family: @font-family--oswald;
   font-size: 16px;
@@ -199,6 +220,7 @@
   text-align: center;
   text-transform: uppercase;
   width: 280px;
+  margin-left: 22px;
   margin-top: 21px;
 }
 
@@ -209,7 +231,8 @@
   font-weight: 400;
   color: @color-gray;
   text-align: center;
-  margin-top: 22px;
+  margin-top: 21px;
+  padding-left: 85px;
 }
 
 @media (min-width: @tablet-width) {
@@ -218,37 +241,171 @@
     line-height: 20px;
   }
 
-  .fields__btn {
+  .fields__text {
     font-size: 20px;
+    line-height: 20px;
+    padding-left: 22px;
   }
 
-  .fields__footnote {
-    font-size: 16px;
+  .fields__cat-info {
+    margin-bottom: 45px;
+  }
+
+  .fields__program-type {
+    width: 630px;
+  }
+
+  .fields__radio {
+    padding-left: 79px;
+    padding-top: 9px;
+    padding-bottom: 24px;
+  }
+
+  .fields__radio::before {
+    left: 20px;
+    top: 0;
+    width: 41px;
+    height: 41px;
+  }
+
+  .fields__radio::after {
+    left: 30px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .fields__contacts {
+    margin-top: 74px;
+  }
+
+  .fields__title {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 600px;
+    padding-left: 32px;
+    padding-right: 42px;
+    margin-left: -34px;
+    margin-bottom: 37px;
+  }
+
+  .fields__title::before {
+    top: 50%;
+    left: -36px;
+    width: 770px;
+  }
+
+  .fields__icon-mail {
+    top: 24px;
+    right: 15px;
+  }
+
+  .fields__icon-phone {
+    top: 20px;
+    right: 11px;
+  }
+
+  .fields__comments {
+    margin-top: 47px;
+    margin-bottom: 37px;
+  }
+
+  .fields__text--textarea {
+    margin-top: 42px;
+    min-height: 171px;
   }
 
   .fields__list {
     display: flex;
     flex-direction: column;
+    margin-top: 29px;
+    margin-bottom: 12px;
   }
 
   .fields__list--add {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 13px;
+    padding-left: 13px;
   }
 
   .fields__item {
-    width: 245px;
+    width: 272px;
+    margin-bottom: 30px;
+  }
+
+  .fields__check::before {
+    left: -13px;
+    top: -3px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .fields__bottom-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .fields__btn {
+    width: 283px;
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 13px;
+    margin-top: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .fields__footnote {
+    font-size: 16px;
+    margin-top: 33px;
+    margin-left: 62px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .fields__label {
+    margin-right: 19px;
+  }
+
   .fields__cat-info {
-    width: 570px;
+    width: 579px;
+    padding-left: 0;
+    padding-top: 6px;
+  }
+
+  .fields__text {
+    padding-bottom: 11px;
   }
 
   .fields__program-type {
     width: 570px;
+    margin-top: 8px;
+    padding-top: 25px;
+    padding-left: 7px;
+    padding-bottom: 4px;
+  }
+
+  .fields__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .fields__title {
+    padding-left: 46px;
+    margin-left: -48px;
+  }
+
+  .fields__title::before {
+    top: 60%;
+    left: -70px;
+    width: 1440px;
+  }
+
+  .fields__contacts {
+    margin-top: 0;
   }
 
   .fields__contact-wrapper {
@@ -256,9 +413,42 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 1220px;
   }
 
   .fields__wrap--contacts {
     width: 570px;
+    padding-top: 3px;
+  }
+
+  .fields__icon-mail {
+    right: 19px;
+  }
+
+  .fields__icon-phone {
+    right: 19px;
+  }
+
+  .fields__comments {
+    margin-top: 48px;
+    margin-bottom: 39px;
+  }
+
+  .fields__item {
+    width: 234px;
+    margin-top: 22px;
+    margin-left: 15px;
+  }
+
+  .fields__btn {
+    width: 571px;
+    margin-left: 0;
+    margin-top: 37px;
+  }
+
+  .fields__footnote {
+    margin-top: 53px;
+    margin-left: 0;
+    padding-left: 82px;
   }
 }

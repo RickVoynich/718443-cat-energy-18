@@ -15,29 +15,38 @@
   border: none;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
   width: 320px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
+  .program {
+    padding-bottom: 72px;
+  }
+
   .program__form {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 27px;
+    align-items: flex-start;
   }
 
   .program__fields {
-    width: 708px;
+    width: 649px;
+    padding: 0 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .program {
+    padding-bottom: 78px;
+  }
+
   .program__form {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
   }
 
   .program__fields {
     width: 1220px;
+    padding: 0;
   }
 }
