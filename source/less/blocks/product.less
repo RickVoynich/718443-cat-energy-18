@@ -1,17 +1,16 @@
 .product {
   display: flex;
-  flex-direction: column;
   align-content: center;
-  border-top: 1px solid #ededed;
 }
 
-.product__wrap {
-  display: flex;
+.product__illustration {
+  width: 140px;
 }
 
 .product__info-wrap {
   display: flex;
   flex-direction: column;
+  width: 140px;
 }
 
 .product__title {
@@ -23,7 +22,7 @@
   text-align: left;
   text-transform: uppercase;
   width: 74px;
-  margin-top: 21px;
+  margin-top: 1px;
   margin-bottom: 12px;
 }
 
@@ -49,6 +48,10 @@
   text-align: right;
 }
 
+.product__price {
+  text-transform: uppercase;
+}
+
 .product__button {
   width: 280px;
   padding-top: 10px;
@@ -62,38 +65,36 @@
     background-image: linear-gradient(to bottom, transparent 0, transparent 77px, @color-lightgray 77px, @color-lightgray 100%);
   }
 
-  .product__wrap {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 33px;
-  }
-
   .product__illustration {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 100%;
+  }
+
+  .product__info-wrap {
+    width: 245px;
   }
 
   .product__image--small {
-    width: 161px;
+    width: 322px;
     margin-top: 38px;
   }
 
   .product__image--big {
-    width: 195px;
-    margin-left: 5px;
+    width: 322px;
   }
 
   .product__title {
     font-size: 20px;
     text-align: center;
     width: 150px;
-    margin: 34px auto 15px;
+    margin: 37px auto 15px;
   }
 
   .product__table {
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 33px;
     width: 250px;
     font-size: 16px;
   }
@@ -119,21 +120,30 @@
     background-image: linear-gradient(to bottom, transparent 0, transparent 75px, @color-lightgray 75px, @color-lightgray 100%);
   }
 
+  .product__image--small {
+    width: 245px;
+  }
+
+  .product__image--big {
+    width: 245px;
+  }
+
   .product__title {
     font-size: 20px;
-    margin-top: 32px;
-    margin-bottom: 20px;
+    margin-top: 37px;
+    margin-bottom: 5px;
   }
 
   .product__table {
     margin: auto;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 14px;
     width: 170px;
     font-size: 16px;
   }
 
   .product__button {
     width: 169px;
+    margin-bottom: 39px;
   }
 }
