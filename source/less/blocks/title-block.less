@@ -1,5 +1,4 @@
 .title-block {
-  width: 280px;
   padding-top: 14px;
 }
 
@@ -28,8 +27,8 @@
 
 @media (min-width: @tablet-width) {
   .title-block {
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-top: 43px;
+    padding-bottom: 32px;
   }
 
   .title-block__title {
@@ -39,14 +38,16 @@
   .title-block__text {
     font-size: 20px;
     line-height: 30px;
+    width: 386px;
+    margin-top: 55px;
+    margin-left: 41px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .title-block {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
+    flex-direction: column;
+    padding-top: 60px;
   }
 
   .title-block__title {
@@ -56,5 +57,6 @@
   .title-block__text {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 0;
   }
 }
