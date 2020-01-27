@@ -366,12 +366,46 @@
 }
 
 @media (min-width: @desktop-width) {
+  .fields__label {
+    margin-right: 19px;
+  }
+
   .fields__cat-info {
-    width: 570px;
+    width: 579px;
+    padding-left: 0;
+    padding-top: 6px;
+  }
+
+  .fields__text {
+    padding-bottom: 11px;
   }
 
   .fields__program-type {
     width: 570px;
+    margin-top: 8px;
+    padding-top: 25px;
+    padding-left: 7px;
+    padding-bottom: 4px;
+  }
+
+  .fields__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .fields__title {
+    padding-left: 46px;
+    margin-left: -48px;
+  }
+
+  .fields__title::before {
+    top: 60%;
+    left: -70px;
+    width: 1440px;
+  }
+
+  .fields__contacts {
+    margin-top: 0;
   }
 
   .fields__contact-wrapper {
@@ -379,9 +413,42 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 1220px;
   }
 
   .fields__wrap--contacts {
     width: 570px;
+    padding-top: 3px;
+  }
+
+  .fields__icon-mail {
+    right: 19px;
+  }
+
+  .fields__icon-phone {
+    right: 19px;
+  }
+
+  .fields__comments {
+    margin-top: 48px;
+    margin-bottom: 39px;
+  }
+
+  .fields__item {
+    width: 234px;
+    margin-top: 22px;
+    margin-left: 15px;
+  }
+
+  .fields__btn {
+    width: 571px;
+    margin-left: 0;
+    margin-top: 37px;
+  }
+
+  .fields__footnote {
+    margin-top: 53px;
+    margin-left: 0;
+    padding-left: 82px;
   }
 }
