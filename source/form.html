@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <header class="header container">
+  <header class="header header--index container">
     <div class="header__wrapper">
-      <a class="header__logo" href="index.html">
+      <a class="header__logo">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -20,11 +20,23 @@
         </picture>
       </a>
       <h2 class="visually-hidden">CAT ENERGY</h2>
-      <button type="button" class="burger burger--no-js">
-        <span class="visually-hidden">Открыть меню</span>
+      <button type="button" class="header__burger header__burger--no-js">
+        <svg class="header__burger-icon header__burger-icon--open" width="24" height="19" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 24 18" style="enable-background: new 0 0 24 18;" xml:space="preserve">
+          <rect y="16" width="24" height="2" />
+          <rect y="8" width="24" height="2" />
+          <rect width="24" height="2" />
+        </svg>
+        <svg class="header__burger-icon header__burger-icon--close" width="18" height="18" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 18 18" style="enable-background: new 0 0 18 18;" xml:space="preserve">
+          <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 " />
+        </svg>
+        <span class="visually-hidden">Кнопка взаимодействия с меню</span>
       </button>
     </div>
-    <nav class="header__menu header__menu--no-js">
+    <nav class="header__menu header__menu--closed">
       <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -62,6 +74,7 @@
             <input type="text" class="fields__text" name="age" placeholder="7" id="cat-age">
           </div>
         </fieldset>
+
         <fieldset class="program__fields fields__program-type">
           <ul class="fields__list">
             <li>
@@ -80,7 +93,7 @@
         </fieldset>
 
         <fieldset class="program__fields fields__contacts">
-          <legend class="fields__title fields__title--line">Контактные данные (владельца кота)</legend>
+          <legend class="fields__title">Контактные данные (владельца кота)</legend>
           <div class="fields__contact-wrapper">
             <div class="fields__wrap fields__wrap--contacts">
               <label class="fields__label" for="cat-mail">E&#8209;mail:*</label>
@@ -92,11 +105,10 @@
                 <path
                   d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
               </svg>
-
             </div>
             <div class="fields__wrap fields__wrap--contacts">
               <label class="fields__label" for="cat-phone">Телефон:*</label>
-              <input type="tel" class="fields__text" name="phone" placeholder="8 (960) 900-60-90" id="cat-phone"
+              <input type="number" class="fields__text" name="phone" placeholder="8 (960) 900-60-90" id="cat-phone"
                 required>
               <svg class="fields__icon-phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
@@ -108,19 +120,19 @@
                   C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
                   C7.8,20,8.1,19.7,8.1,19.4z" />
               </svg>
-
             </div>
           </div>
         </fieldset>
 
         <fieldset class="program__fields fields__comments">
-          <legend class="fields__title fields__title--line ">Комментарий</legend>
-          <textarea class="fields__text fields__text--textarea" name="comments" rows="5"
+          <legend class="fields__title">Комментарий</legend>
+          <label class="visually-hidden" for="comments">Комментарий пользователя</label>
+          <textarea class="fields__text fields__text--textarea" name="comments" id="comments" rows="5"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="program__fields fields__add">
-          <legend class="fields__title fields__title--add fields__title--line">Дополнительно</legend>
+          <legend class="fields__title fields__title--add">Дополнительно</legend>
           <ul class="fields__list fields__list--add">
             <li class="fields__item">
               <input type="checkbox" class="fields__check-input" name="sweetener" id="sweetener" checked>
@@ -162,7 +174,7 @@
           <img class="cooperation__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
             alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </picture>
-        <iframe class="cooperation__map"
+        <iframe class="cooperation__map" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3002879875057!2d30.322808731053662!3d59.9387697644546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575987002302!5m2!1sru!2sru"
           width="320" height="362" style="border: 0;" allowfullscreen="">
         </iframe>

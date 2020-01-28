@@ -24,13 +24,14 @@
   max-width: 202px;
 }
 
-.fields__title--line::before {
+.fields__title::before {
   content: "";
   z-index: -3;
   width: 300px;
   height: 3px;
   position: absolute;
   top: 15px;
+  left: 0;
   background-color: @color-green;
 }
 
@@ -59,7 +60,7 @@
 
 .fields__text {
   position: relative;
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   font-family: @font-family--oswald;
   font-size: 16px;
   line-height: 18px;
@@ -69,11 +70,34 @@
   text-transform: uppercase;
   width: 100%;
   padding: 12px;
+  outline: none;
 
   &::placeholder {
     color: @color-gray;
     text-transform: uppercase;
   }
+}
+
+.fields__text:hover {
+  border-color: rgba(205, 205, 205, 1);
+}
+
+.fields__text:invalid {
+  border-color: @color-error;
+}
+
+.fields__text:invalid+svg {
+  fill: @color-error;
+}
+
+.fields__text:focus,
+.fields__text:active {
+  border-color: @color-gray;
+}
+
+.fields__text:focus+svg,
+.fields__text:active+svg {
+  fill: @color-green;
 }
 
 .fields__text--textarea {
@@ -290,10 +314,19 @@
     margin-bottom: 37px;
   }
 
+  .fields__title::after {
+    content: "";
+    z-index: -3;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 15px;
+    right: 100%;
+    background-color: @color-green;
+  }
+
   .fields__title::before {
-    top: 23px;
-    left: -37px;
-    width: 768px;
+    width: 740px;
   }
 
   .fields__contact-wrapper {
@@ -404,10 +437,13 @@
     margin-left: -48px;
   }
 
+
+  .fields__title::after {
+    width: 70px;
+  }
+
   .fields__title::before {
-    top: 60%;
-    left: -70px;
-    width: 1440px;
+    width: 1370px;
   }
 
   .fields__contacts {

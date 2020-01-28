@@ -20,11 +20,23 @@
         </picture>
       </a>
       <h2 class="visually-hidden">CAT ENERGY</h2>
-      <button type="button" class="burger burger--no-js">
-        <span class="visually-hidden">Открыть меню</span>
+      <button type="button" class="header__burger header__burger--no-js">
+        <svg class="header__burger-icon header__burger-icon--open" width="24" height="19" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 24 18" style="enable-background: new 0 0 24 18;" xml:space="preserve">
+          <rect y="16" width="24" height="2" />
+          <rect y="8" width="24" height="2" />
+          <rect width="24" height="2" />
+        </svg>
+        <svg class="header__burger-icon header__burger-icon--close" width="18" height="18" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 18 18" style="enable-background: new 0 0 18 18;" xml:space="preserve">
+          <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 " />
+        </svg>
+        <span class="visually-hidden">Кнопка взаимодействия с меню</span>
       </button>
     </div>
-    <nav class="header__menu header__menu--no-js">
+    <nav class="header__menu header__menu--closed">
       <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--index">Главная</a>
@@ -42,6 +54,14 @@
   <main class="page-main">
     <section class="food-program">
       <div class="food-program__background-wrap">
+        <div class="food-program__background-image">
+          <picture>
+            <source media="(min-width: 1300px)"
+              srcset="img/index-background-desktop@1x.jpg, img/index-background-desktop@2x.jpg 2x">
+            <img class="food-program__background-img" src="img/index-background-mobile@1x.jpg"
+              srcset="img/index-background-mobile@2x.jpg 2x" alt="">
+          </picture>
+        </div>
         <div class="food-program__wrap container">
           <h2 class="food-program__title">Функциональное питание для котов</h2>
           <p class="food-program__slogan">Занялся собой? Займись котом!</p>
@@ -167,7 +187,7 @@
           <img class="cooperation__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
             alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </picture>
-        <iframe class="cooperation__map"
+        <iframe class="cooperation__map" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3002879875057!2d30.322808731053662!3d59.9387697644546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575987002302!5m2!1sru!2sru"
           width="320" height="362" style="border: 0;" allowfullscreen="">
         </iframe>
