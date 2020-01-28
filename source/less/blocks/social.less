@@ -1,8 +1,9 @@
 .social {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid @color-border;
+  border-bottom: 1px solid @color-border;
+  background-color: @color-lightgray;
   padding: 0;
   padding-top: 22px;
   padding-bottom: 20px;
@@ -14,6 +15,20 @@
 .social__item:nth-child(2) {
   margin-left: 39px;
   margin-right: 39px;
+}
+
+.social__icon path {
+  fill: #666666;
+
+  &:focus,
+  &:hover {
+    fill: @color-lightgreen;
+  }
+
+  &:active {
+    fill: @color-green;
+    opacity: 0.3;
+  }
 }
 
 .social__icon--vk {
@@ -29,20 +44,6 @@
 .social__icon--fb {
   width: 10px;
   height: 19px;
-}
-
-.social__icon {
-  fill: #666666;
-
-  &:focus,
-  &:hover {
-    fill: @color-lightgreen;
-  }
-
-  &:active {
-    fill: @color-green;
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: @tablet-width) {
