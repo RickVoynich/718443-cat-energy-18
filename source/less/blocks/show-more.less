@@ -61,33 +61,33 @@
     background-color: white;
     border: 1px solid @color-lightgray;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 83px;
+    position: relative;
   }
 
-
   .show-more::before {
+    position: absolute;
     background-image: url("/img/icon-plus.svg");
     width: 61px;
     height: 61px;
-    margin-top: 59px;
-    margin-bottom: 10px;
+    top: 28px;
   }
 
   .show-more__title {
-    margin-top: 38px;
-    margin-bottom: 20px;
+    position: absolute;
     width: 135px;
     font-size: 20px;
     line-height: 20px;
+    top: 146px;
   }
 
   .show-more__text {
     width: 170px;
-    margin-top: 10px;
-    padding-bottom: 63px;
+    position: absolute;
     text-align: center;
     font-size: 16px;
-    line-height: normal;
+    line-height: 18px;
+    top: 223px;
   }
 
   .show-more__button {
@@ -96,24 +96,17 @@
     background-color: @color-lightgray;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 21px;
+    position: absolute;
+    bottom: 34px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .show-more__title {
-    font-size: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  .show-more__text {
-    font-size: 16px;
-    margin-top: 0;
+  .show-more {
+    margin-top: 85px;
   }
 
   .show-more__button {
     width: 169px;
-    margin-bottom: 32px;
   }
 }
