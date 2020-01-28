@@ -43,11 +43,16 @@
 @media (max-width: @mobile-width-only) {
   .food-program__background-wrap {
     min-height: 305px;
-    background-image: url("/img/index-background-mobile@1x.jpg");
     background-color: @color-lightgreen;
-    background-repeat: no-repeat;
-    background-position: 50%;
     position: relative;
+    z-index: -3;
+  }
+
+  .food-program__background-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -150px;
     z-index: -2;
   }
 }
@@ -62,6 +67,10 @@
     width: @tablet-width;
     padding-left: 118px;
     padding-top: 20px;
+  }
+
+  .food-program__background-img {
+    display: none;
   }
 
   .food-program__title {
@@ -98,6 +107,23 @@
 @media (min-width: @desktop-width) {
   .food-program {
     min-height: 605px;
+  }
+
+  .food-program__background-image {
+    height: 696px;
+    width: 100%;
+    background-image: linear-gradient(to right, @color-white, @color-white 50%, @color-lightgreen 50%, @color-lightgreen);
+    position: absolute;
+    top: -10px;
+    z-index: -3;
+  }
+
+  .food-program__background-img {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: -2;
   }
 
   .food-program__wrap {
