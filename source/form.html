@@ -67,7 +67,7 @@
           </div>
           <div class="fields__wrap">
             <label class="fields__label" for="cat-weight">Вес&nbsp;(кг):*</label>
-            <input type="text" class="fields__text" name="weight" placeholder="7" id="cat-weight" required>
+            <input type="number" class="fields__text" name="weight" placeholder="7" id="cat-weight" required>
           </div>
           <div class="fields__wrap">
             <label class="fields__label" for="cat-age">Возраст&nbsp;(лет):</label>
@@ -78,15 +78,15 @@
         <fieldset class="program__fields fields__program-type">
           <ul class="fields__list">
             <li>
-              <input type="radio" class="fields__radio-input" name="program-type" value="slim" id="slim" checked>
+              <input type="radio" class="fields__radio-input visually-hidden" name="program-type" value="slim" id="slim" checked>
               <label class="fields__radio fields__label" for="slim">Похудение</label>
             </li>
             <li>
-              <input type="radio" class="fields__radio-input" name="program-type" value="pro" id="pro">
+              <input type="radio" class="fields__radio-input visually-hidden" name="program-type" value="pro" id="pro">
               <label class="fields__radio fields__label" for="pro">Набор массы</label>
             </li>
             <li>
-              <input type="radio" class="fields__radio-input" name="program-type" value="unknown" id="unknown">
+              <input type="radio" class="fields__radio-input visually-hidden" name="program-type" value="unknown" id="unknown">
               <label class="fields__radio fields__label" for="unknown">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -135,19 +135,19 @@
           <legend class="fields__title fields__title--add">Дополнительно</legend>
           <ul class="fields__list fields__list--add">
             <li class="fields__item">
-              <input type="checkbox" class="fields__check-input" name="sweetener" id="sweetener" checked>
+              <input type="checkbox" class="fields__check-input visually-hidden" name="sweetener" id="sweetener" checked>
               <label class="fields__check fields__label" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="fields__item">
-              <input type="checkbox" class="fields__check-input" name="water" id="water">
+              <input type="checkbox" class="fields__check-input visually-hidden" name="water" id="water">
               <label class="fields__check fields__label" for="water">Питьевая вода</label>
             </li>
             <li class="fields__item">
-              <input type="checkbox" class="fields__check-input" name="milk" id="milk">
+              <input type="checkbox" class="fields__check-input visually-hidden" name="milk" id="milk">
               <label class="fields__check fields__label" for="milk">Молоко</label>
             </li>
             <li class="fields__item">
-              <input type="checkbox" class="fields__check-input" name="vitamins" id="vitamins">
+              <input type="checkbox" class="fields__check-input visually-hidden" name="vitamins" id="vitamins">
               <label class="fields__check fields__label" for="vitamins">Витамины</label>
             </li>
           </ul>

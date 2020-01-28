@@ -86,7 +86,7 @@
   border-color: @color-error;
 }
 
-.fields__text:invalid+svg {
+.fields__text:invalid + svg {
   fill: @color-error;
 }
 
@@ -95,8 +95,8 @@
   border-color: @color-gray;
 }
 
-.fields__text:focus+svg,
-.fields__text:active+svg {
+.fields__text:focus + svg,
+.fields__text:active + svg {
   fill: @color-green;
 }
 
@@ -146,6 +146,10 @@
   cursor: pointer;
 }
 
+.fields__radio-input {
+  position: absolute;
+}
+
 .fields__radio::before {
   content: "";
   position: absolute;
@@ -170,11 +174,8 @@
   background-color: @color-green;
 }
 
-.fields__radio-input {
-  display: none;
-}
 
-.fields__radio-input:checked+.fields__radio::after {
+.fields__radio-input:checked + .fields__radio::after {
   display: block;
 }
 
@@ -219,14 +220,15 @@
 }
 
 .fields__check-input {
-  display: none;
+  position: absolute;
 }
 
-.fields__check-input:checked+.fields__check::before {
+
+.fields__check-input:checked + .fields__check::before {
   background-image: url("/img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 70%;
+  background-size: 22px 17px;
 }
 
 .fields__bottom-wrap {
