@@ -197,12 +197,19 @@
 @media (min-width: @desktop-width) {
   .advantages {
     border: none;
-    padding-bottom: 10px;
   }
 
   .advantages__list {
     padding: 0;
-    margin-top: 63px;
+    margin-top: 58px;
+  }
+
+  .advantages__item {
+    width: 247px;
+  }
+
+  .advantages__item::after {
+    top: -28px;
   }
 
   .advantages__item::before {
@@ -211,18 +218,9 @@
     background-position: 15px 15px;
   }
 
-  .advantages__item {
-    width: 250px;
-  }
-
-  .advantages__item::after {
-    top: -28px;
-  }
-
   .advantages__info {
     width: 250px;
     margin-top: 0;
-    left: 5px;
     top: 0;
   }
 
