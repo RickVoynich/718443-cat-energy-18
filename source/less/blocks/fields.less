@@ -82,11 +82,11 @@
   border-color: rgba(205, 205, 205, 1);
 }
 
-.fields__text:invalid {
+.fields__text:invalid:not(:placeholder-shown) {
   border-color: @color-error;
 }
 
-.fields__text:invalid + svg {
+.fields__text:invalid:not(:placeholder-shown) + svg {
   fill: @color-error;
 }
 
