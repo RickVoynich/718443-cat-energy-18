@@ -140,10 +140,21 @@
 
 @media (min-width: @tablet-width) {
   .demo {
-    background-image: linear-gradient(to bottom, @color-white, @color-white 57%, @color-lightgray 43%, @color-lightgray);
+    position: relative;
+    background-color: transparent;
     width: 100%;
     padding-bottom: 32px;
     padding-top: 15px;
+  }
+
+  .demo__inner {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 462px;
+    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
   }
 
   .demo__wrapper {
@@ -281,7 +292,14 @@
 
 @media (min-width: @desktop-width) {
   .demo {
-    background-image: linear-gradient(to top, @color-lightgray, @color-lightgray 75%, @color-white 25%, @color-white);
+    position: relative;
+    background-color: transparent;
+  }
+
+  .demo__inner {
+    z-index: -3;
+    height: 463px;
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 75%, #eaeaea 25%, #eaeaea);
   }
 
   .demo__wrap-desktop {
@@ -303,12 +321,12 @@
   }
 
   .demo__title {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .demo__text {
-    width: 465px;
-    margin-top: 145px;
+    width: 432px;
+    margin-top: 146px;
   }
 
   .demo__features {
@@ -323,19 +341,18 @@
   }
 
   .demo__indicator {
-    margin-left: 83px;
-    margin-top: 23px;
+    margin-left: 77px;
+    margin-top: 15px;
     width: 571px;
   }
 
   .demo__cost-span {
-    margin-left: 62px;
+    margin-left: 57px;
   }
 
   .demo__img {
-    top: -19px;
+    top: -27px;
     left: auto;
-    right: -9px;
   }
 
   .demo__bold {
@@ -352,6 +369,6 @@
   }
 
   .demo__description {
-    margin-right: 45px;
+    margin-right: 39px;
   }
 }
