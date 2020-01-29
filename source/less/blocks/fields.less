@@ -82,14 +82,6 @@
   border-color: rgba(205, 205, 205, 1);
 }
 
-.fields__text:invalid:not(:placeholder-shown) {
-  border-color: @color-error;
-}
-
-.fields__text:invalid:not(:placeholder-shown) + svg {
-  fill: @color-error;
-}
-
 .fields__text:focus,
 .fields__text:active {
   border-color: @color-gray;
@@ -98,6 +90,14 @@
 .fields__text:focus + svg,
 .fields__text:active + svg {
   fill: @color-green;
+}
+
+.fields__text:not(:placeholder-shown):invalid {
+  border-color: @color-error;
+}
+
+.fields__text:not(:placeholder-shown):invalid + svg {
+  fill: @color-error;
 }
 
 .fields__text--textarea {
