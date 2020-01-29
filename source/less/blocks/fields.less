@@ -87,8 +87,8 @@
   border-color: @color-gray;
 }
 
-.fields__text:focus+svg,
-.fields__text:active+svg {
+.fields__text:focus + svg,
+.fields__text:active + svg {
   fill: @color-green;
 }
 
@@ -96,7 +96,7 @@
   border-color: @color-error;
 }
 
-.fields__text:not(:placeholder-shown):invalid+svg {
+.fields__text:not(:placeholder-shown):invalid + svg {
   fill: @color-error;
 }
 
@@ -174,7 +174,7 @@
   background-color: @color-green;
 }
 
-.fields__radio-input:checked+.fields__radio::after {
+.fields__radio-input:checked + .fields__radio::after {
   display: block;
 }
 
@@ -222,7 +222,7 @@
   display: none;
 }
 
-.fields__check-input:checked+.fields__check::before {
+.fields__check-input:checked + .fields__check::before {
   background-image: url("/img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
