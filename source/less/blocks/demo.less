@@ -76,17 +76,6 @@
   }
 }
 
-.demo__cat--after {
-  width: 42px;
-  text-align: right;
-  margin-left: 122px;
-}
-
-.demo__cat--before {
-  width: 38px;
-  text-align: left;
-}
-
 .demo__features {
   margin-top: 28px;
   display: flex;
@@ -153,13 +142,14 @@
   .demo {
     background-image: linear-gradient(to bottom, @color-white, @color-white 57%, @color-lightgray 43%, @color-lightgray);
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
     padding-top: 15px;
   }
 
   .demo__wrapper {
     width: @tablet-width;
     position: relative;
+    padding-top: 1px;
   }
 
   .demo__title {
@@ -195,6 +185,7 @@
     line-height: 20px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 6px;
     border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
   }
 
@@ -224,7 +215,7 @@
     width: 195px;
     position: absolute;
     text-align: right;
-    right: 28px;
+    right: 30px;
     top: 275px;
     margin-top: 9px;
   }
@@ -233,30 +224,28 @@
     margin-top: 0;
     width: auto;
     height: auto;
-    top: 85px;
+    top: 80px;
     left: 45px;
   }
 
   .demo__indicator {
     justify-content: space-between;
-    width: 574px;
+    width: 571px;
     margin-left: 97px;
-    margin-top: 106px;
+    margin-top: 96px;
     margin-bottom: 5px;
   }
 
   .demo__indicator::after {
     content: "";
-    position: absolute;
-    width: 428px;
+    width: 435px;
     height: 6px;
-    border: 1px solid #cdcdcd;
     border-radius: 2.5px;
     box-shadow: none;
     background-image: none;
     background-color: #cdcdcd;
-    left: 65px;
-    top: 10px;
+    left: 70px;
+    top: 8px;
   }
 
   .demo__point {
@@ -271,7 +260,8 @@
     cursor: pointer;
     z-index: 3;
     background-color: @color-green;
-    right: 270px;
+    right: 269px;
+    top: -6px;
     transition: all 0.5s ease;
 
     &:hover {
@@ -282,15 +272,6 @@
     &:active {
       border: 1px solid @color-green;
     }
-  }
-
-  .demo__cat--is {
-    width: 52px;
-    margin-left: 452px;
-  }
-
-  .demo__cat--was {
-    width: 48px;
   }
 
   .demo__live {
