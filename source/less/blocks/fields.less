@@ -1,5 +1,5 @@
 .fields__cat-info {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 .fields__wrap {
@@ -36,7 +36,7 @@
 }
 
 .fields__contacts {
-  margin-top: 27px;
+  margin-top: 28px;
 }
 
 .fields__contact-wrapper {
@@ -44,7 +44,7 @@
 }
 
 .fields__comments {
-  margin-top: 13px;
+  margin-top: 12px;
 }
 
 .fields__label {
@@ -87,8 +87,8 @@
   border-color: @color-gray;
 }
 
-.fields__text:focus + svg,
-.fields__text:active + svg {
+.fields__text:focus+svg,
+.fields__text:active+svg {
   fill: @color-green;
 }
 
@@ -96,7 +96,7 @@
   border-color: @color-error;
 }
 
-.fields__text:not(:placeholder-shown):invalid + svg {
+.fields__text:not(:placeholder-shown):invalid+svg {
   fill: @color-error;
 }
 
@@ -174,7 +174,7 @@
   background-color: @color-green;
 }
 
-.fields__radio-input:checked + .fields__radio::after {
+.fields__radio-input:checked+.fields__radio::after {
   display: block;
 }
 
@@ -222,7 +222,7 @@
   display: none;
 }
 
-.fields__check-input:checked + .fields__check::before {
+.fields__check-input:checked+.fields__check::before {
   background-image: url("/img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -238,7 +238,6 @@
   text-align: center;
   text-transform: uppercase;
   width: 280px;
-  margin-left: 22px;
   margin-top: 23px;
 }
 
@@ -249,8 +248,9 @@
   font-weight: 400;
   color: @color-gray;
   text-align: center;
-  margin-top: 21px;
-  padding-left: 85px;
+  display: inline-block;
+  padding-top: 21px;
+  padding-left: 62px;
 }
 
 @media (min-width: @tablet-width) {
@@ -295,7 +295,7 @@
   }
 
   .fields__contacts {
-    margin-top: 74px;
+    margin-top: 72px;
   }
 
   .fields__title {
@@ -314,13 +314,14 @@
     width: 30px;
     height: 3px;
     position: absolute;
-    top: 15px;
+    top: 58%;
     right: 100%;
     background-color: @color-green;
   }
 
   .fields__title::before {
     width: 740px;
+    top: 58%;
   }
 
   .fields__contact-wrapper {
@@ -393,7 +394,7 @@
 
   .fields__footnote {
     font-size: 16px;
-    margin-top: 34px;
+    padding-top: 34px;
     padding-left: 61px;
   }
 }
@@ -411,6 +412,7 @@
 
   .fields__text {
     padding-bottom: 11px;
+    padding-left: 20px;
   }
 
   .fields__program-type {
@@ -418,7 +420,7 @@
     margin-top: 8px;
     padding-top: 25px;
     padding-left: 7px;
-    padding-bottom: 4px;
+    padding-bottom: 10px;
   }
 
   .fields__list {
@@ -440,7 +442,7 @@
   }
 
   .fields__contacts {
-    margin-top: 0;
+    margin-top: 1px;
   }
 
   .fields__contact-wrapper {
@@ -453,7 +455,7 @@
 
   .fields__wrap--contacts {
     width: 570px;
-    padding-top: 3px;
+    padding-top: 1px;
   }
 
   .fields__icon-mail {
@@ -465,8 +467,12 @@
   }
 
   .fields__comments {
-    margin-top: 48px;
+    margin-top: 53px;
     margin-bottom: 39px;
+  }
+
+  .fields__text--textarea {
+    margin-top: 40px;
   }
 
   .fields__item {
@@ -482,8 +488,7 @@
   }
 
   .fields__footnote {
-    margin-top: 53px;
-    margin-left: 0;
     padding-left: 82px;
+    padding-top: 53px;
   }
 }
